@@ -65,7 +65,7 @@ Load the required data:
    - vsdbabysoc_post_cts.sdc
   
 
-### Commands Used
+### TCL Script
 
 <details> <summary><strong>sta_across_pvt_route.tcl</strong></summary>
 # (The above file are available in my system's /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib directory)
@@ -121,7 +121,33 @@ Run multi-corner timing using the provided TCL script.
  % source/home/veeraragavan/VSD_Soc_TapeOut_Program/week8/Post_route_STA/src/sta_across_pvt_route.tcl
 ```
 
-![Alt Text](Screenshots/R_sta1.png)
+<table>
+  <tr>
+    <th style="background-color:yellow">PVT_CORNER</th>
+    <th style="background-color:yellow">Worst Hold Slack</th>
+    <th style="background-color:yellow">Worst Setup Slack</th>
+    <th style="background-color:yellow">WNS</th>
+    <th style="background-color:yellow">TNS</th>
+  </tr>
+
+  <tr><td>tt_025C_1v80</td><td>0.3104</td><td>6.5987</td><td>0</td><td>0</td></tr>
+  <tr><td>ff_100C_1v65</td><td>0.2516</td><td>7.5661</td><td>0</td><td>0</td></tr>
+  <tr><td>ff_100C_1v95</td><td>0.1977</td><td>3.3245</td><td>0</td><td>0</td></tr>
+  <tr><td>ff_n40C_1v56</td><td>0.2904</td><td>6.5235</td><td>0</td><td>0</td></tr>
+  <tr><td>ff_n40C_1v65</td><td>0.2572</td><td>7.1347</td><td>0</td><td>0</td></tr>
+  <tr><td>ff_n40C_1v76</td><td>0.2267</td><td>7.6698</td><td>0</td><td>0</td></tr>
+
+  <tr><td>ss_100C_1v40</td><td>0.8794</td><td>-1.4062</td><td>-1.4062</td><td>-132.1887</td></tr>
+  <tr><td>ss_100C_1v60</td><td>0.6267</td><td>2.5442</td><td>0</td><td>0</td></tr>
+
+  <tr><td>ss_n40C_1v28</td><td>1.6106</td><td>-25.0572</td><td>-25.0572</td><td>-14950.0332</td></tr>
+  <tr><td>ss_n40C_1v35</td><td>1.2095</td><td>-13.8790</td><td>-13.8790</td><td>-7197.1201</td></tr>
+  <tr><td>ss_n40C_1v40</td><td>1.0153</td><td>-9.2025</td><td>-9.2025</td><td>-3827.5981</td></tr>
+  <tr><td>ss_n40C_1v44</td><td>0.9072</td><td>-6.4161</td><td>-6.4161</td><td>-2041.2456</td></tr>
+
+  <tr><td>ss_n40C_1v76</td><td>0.4688</td><td>3.2898</td><td>0</td><td>0</td></tr>
+</table>
+
 
 After running the STA script, you can navigate to the `output` directory to see all the generated timing reports. This includes detailed path delay reports for each library corner (`min_max_*.txt`), worst setup and hold slack summaries (`sta_worst_max_slack.txt and sta_worst_min_slack.txt`), as well as total negative slack (sta_tns.txt) and worst negative slack (`sta_wns.txt`). These files provide a complete overview of the BabySoC design’s timing performance after routing.
 
