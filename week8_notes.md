@@ -14,7 +14,7 @@
   - [3. Generate Timing Reports & Graphs](#3-generate-timing-reports--graphs)
   - [4. Compare Week 3 vs Week 8 Timing](#4-compare-week-3-vs-week-8-timing)
   - [5. Interpret Results](#5-interpret-results)
-- [Final Deliverables](#final-deliverables)
+
 
 ---
 
@@ -161,7 +161,7 @@ The table below compares **Post-Synthesis Timing (Week 3)** with **Post-Route Ti
 | **TT** | TBD          |          TBD |          TBD |          TBD |          TBD |          TBD |          TBD |          TBD |
 | **SS** | TBD          |          TBD |          TBD |          TBD |          TBD |          TBD |          TBD |          TBD |
 | **FF** | TBD          |          TBD |          TBD |          TBD |          TBD |          TBD |          TBD |          TBD |
-|--------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+
 
 ## 5️⃣ Interpret Results
 
