@@ -157,7 +157,7 @@ Here is a graph showing the comparison of `worst-case hold slack` post-synthesis
 
 Here is a graph showing the comparison of `worst-case setup slack` post-synthesis vs post-routing for the BabySoC design.
 
-![Alt Text](Screenshots/WSS.png)
+![Alt Text](Screenshots/THS.png)
 
 Here is a graph showing the comparison of `WNS` post-synthesis vs post-routing for the BabySoC design.
 
