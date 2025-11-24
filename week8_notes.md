@@ -18,7 +18,7 @@
 
 ---
 
-# 🎯 `Objective`
+## 🎯 `Objective`
 To perform Post-Layout Static Timing Analysis (STA) using the SPEF extracted after routing in Week 7, analyze timing across multiple PVT corners, and compare the results with Week 3 post-synthesis timing.
 
 - Post-route **gate-level netlist**
